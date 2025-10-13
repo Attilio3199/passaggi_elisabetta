@@ -138,7 +138,7 @@
       "label": "Data Passaggio",
       "notation": "standard",
       "originalId": "DataPassaggio",
-      "outputFormat": "MM/DD/YYYY",
+      "outputFormat": "DD/MM/YYYY",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,

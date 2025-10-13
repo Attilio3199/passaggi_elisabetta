@@ -1,0 +1,53 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 449,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "u4lzqxgkf5",
+  "leftColumn": 48,
+  "minWidth": 120,
+  "mobileBottomRow": 449,
+  "mobileLeftColumn": 48,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 445,
+  "needsErrorInfo": false,
+  "onClick": "{{InsertRelazione.run().then(() => {\n  showAlert('Relazione salvata con successo', 'success');\n});\ncloseModal(ModalInsert.name);\ncloseModal(ModalUscita.name);}}",
+  "originalBottomRow": 449,
+  "originalTopRow": 445,
+  "parentColumnSpace": 11.91796875,
+  "parentId": "oiw3q0uvz1",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "text": "Salva",
+  "topRow": 445,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "ug6zh3mspj",
+  "widgetName": "ButtonSalva"
+}

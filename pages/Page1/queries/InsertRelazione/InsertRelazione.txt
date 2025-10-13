@@ -1,0 +1,26 @@
+INSERT INTO passaggi_elisabetta SET
+    IdPassaggiElisabetta = '{{SelectNegozio.selectedOptionValue + "_" + moment().format("YYYYMMDD_HHmmss")}}',
+
+		DataPassaggio = {{moment(DatePassaggio.selectedDate).format("YYYY-MM-DD")}},
+    Negozio = '{{SelectNegozio.selectedOptionValue}}',
+    PersoneInNegozio = '{{PersoneInNegozio.text}}',
+    
+    PrimaGioielleria = '{{PrimaGioielleria.text}}',
+    PrimaOreficeria = '{{PrimaOreficeria.text}}',
+    PrimaArgento = '{{PrimaArgento.text}}',
+    PrimaBrand = '{{PrimaBrand.text}}',
+    PrimaOrologi = '{{PrimaOrologi.text}}',
+    PrimaOrdineVetrine = '{{PrimaOrdineVetrine.text}}',
+    PrimaEspositori = '{{PrimaEspositori.text}}',
+    PrimaPulizia = '{{PrimaPulizia.text}}',
+    PrimaOrdineRetro = '{{PrimaOrdineRetro.text}}',
+    
+    DopoGioielleria = '{{DopoGioielleria.text}}',
+    DopoOreficeria = '{{DopoOreficeria.text}}',
+    DopoArgento = '{{DopoArgento.text}}',
+    DopoBrand = '{{DopoBrand.text}}',
+    DopoOrologi = '{{DopoOrologi.text}}',
+    DopoEspositori = '{{DopoEspositori.text}}',
+    
+    SegnalazioniAlTeam = '{{SegnalazioniAlTeam.text}}',
+    OsservazioniAlTeam = '{{OsservazioniAlTeam.text}}';

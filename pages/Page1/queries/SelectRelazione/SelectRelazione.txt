@@ -1,0 +1,3 @@
+SELECT * FROM passaggi_elisabetta
+WHERE Negozio = {{SelectNegozio.selectedOptionValue}}
+AND DataPassaggio = {{moment(DatePassaggio.selectedDate).format("YYYY-MM-DD")}}

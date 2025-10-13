@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "68ecdcae3733a6403dd28441_c3904b6a-8ce1-4cdd-8859-94e92bf52418",
-  "id": "Page1_Query1",
+  "gitSyncId": "68ecdcae3733a6403dd28441_396504cd-6b87-465a-b984-b38a0dfb3780",
+  "id": "Page1_Select1suTutte",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM passaggi_elisabetta",
+      "body": "SELECT * FROM passaggi_elisabetta\nWHERE Negozio = {{TableTutte.triggeredRow.Negozio}}\nAND DataPassaggio = {{TableTutte.triggeredRow.DataPassaggio}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,10 +22,14 @@
       "name": "Metabase",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [],
-    "name": "Query1",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "name": "Select1suTutte",
     "pageId": "Page1",
-    "runBehaviour": "MANUAL",
+    "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }
 }

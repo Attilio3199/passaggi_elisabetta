@@ -1,0 +1,2 @@
+SELECT DataPassaggio, Negozio 
+FROM passaggi_elisabetta

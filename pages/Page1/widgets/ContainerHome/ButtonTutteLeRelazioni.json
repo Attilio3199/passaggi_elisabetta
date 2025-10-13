@@ -14,11 +14,15 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": false,
+  "isVisible": true,
   "key": "ozgbnm0fbk",
   "leftColumn": 0,
   "minWidth": 120,
@@ -27,6 +31,7 @@
   "mobileRightColumn": 16,
   "mobileTopRow": 24,
   "needsErrorInfo": false,
+  "onClick": "{{TutteRelazioni.run();\nshowModal(ModalTutteLeRelazioni.name);}}",
   "parentColumnSpace": 16.1142578125,
   "parentId": "jojhclu2cw",
   "parentRowSpace": 10,

@@ -1,0 +1,2 @@
+SELECT Negozio,DataPassaggio FROM passaggi_elisabetta
+Where Negozio = {{SelectNegozio.selectedOptionValue}}

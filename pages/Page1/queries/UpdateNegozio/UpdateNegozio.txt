@@ -1,0 +1,28 @@
+UPDATE passaggi_elisabetta SET
+    IdPassaggiElisabetta = '{{SelectNegozio.selectedOptionValue + "_" + moment().format("YYYYMMDD_HHmmss")}}',
+
+    DataPassaggio = {{TableNegozio.triggeredRow.DataPassaggio}},
+    Negozio = '{{TableNegozio.triggeredRow.Negozio}}',
+    PersoneInNegozio = '{{PersoneInNegozioCopyCopyCopy.text}}',
+    
+    PrimaGioielleria = '{{PrimaGioielleriaCopyCopyCopy.text}}',
+    PrimaOreficeria = '{{PrimaOreficeriaCopyCopyCopy.text}}',
+    PrimaArgento = '{{PrimaArgentoCopyCopyCopy.text}}',
+    PrimaBrand = '{{PrimaBrandCopyCopyCopy.text}}',
+    PrimaOrologi = '{{PrimaOrologiCopyCopyCopy.text}}',
+    PrimaOrdineVetrine = '{{PrimaOrdineVetrineCopyCopyCopy.text}}',
+    PrimaEspositori = '{{PrimaEspositoriCopyCopyCopy.text}}',
+    PrimaPulizia = '{{PrimaPuliziaCopyCopyCopy.text}}',
+    PrimaOrdineRetro = '{{PrimaOrdineRetroCopyCopyCopy.text}}',
+    
+    DopoGioielleria = '{{DopoGioielleriaCopyCopyCopy.text}}',
+    DopoOreficeria = '{{DopoOreficeriaCopyCopyCopy.text}}',
+    DopoArgento = '{{DopoArgentoCopyCopyCopy.text}}',
+    DopoBrand = '{{DopoBrandCopyCopyCopy.text}}',
+    DopoOrologi = '{{DopoOrologiCopyCopyCopy.text}}',
+    DopoEspositori = '{{DopoEspositoriCopyCopyCopy.text}}',
+    
+    SegnalazioniAlTeam = '{{SegnalazioniAlTeamCopyCopyCopy.text}}',
+    OsservazioniAlTeam = '{{OsservazioniAlTeamCopyCopyCopy.text}}'
+WHERE Negozio = '{{TableNegozio.triggeredRow.Negozio}}'
+AND DataPassaggio = '{{moment(TableNegozio.triggeredRow.DataPassaggio).format("YYYY-MM-DD")}}';

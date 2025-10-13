@@ -1,0 +1,3 @@
+SELECT * FROM passaggi_elisabetta
+WHERE Negozio = {{TableNegozio.triggeredRow.Negozio}}
+AND DataPassaggio = {{TableNegozio.triggeredRow.DataPassaggio}}

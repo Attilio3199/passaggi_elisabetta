@@ -3,26 +3,26 @@ UPDATE passaggi_elisabetta SET
 
 		DataPassaggio = {{moment(DatePassaggio.selectedDate).format("YYYY-MM-DD")}},
     Negozio = '{{SelectNegozio.selectedOptionValue}}',
-    PersoneInNegozio = '{{PersoneInNegozio.text}}',
+    PersoneInNegozio = '{{PersoneInNegozioCopy.text}}',
     
-    PrimaGioielleria = '{{PrimaGioielleria.text}}',
-    PrimaOreficeria = '{{PrimaOreficeria.text}}',
-    PrimaArgento = '{{PrimaArgento.text}}',
-    PrimaBrand = '{{PrimaBrand.text}}',
-    PrimaOrologi = '{{PrimaOrologi.text}}',
-    PrimaOrdineVetrine = '{{PrimaOrdineVetrine.text}}',
-    PrimaEspositori = '{{PrimaEspositori.text}}',
-    PrimaPulizia = '{{PrimaPulizia.text}}',
-    PrimaOrdineRetro = '{{PrimaOrdineRetro.text}}',
+    PrimaGioielleria = '{{PrimaGioielleriaCopy.text}}',
+    PrimaOreficeria = '{{PrimaOreficeriaCopy.text}}',
+    PrimaArgento = '{{PrimaArgentoCopy.text}}',
+    PrimaBrand = '{{PrimaBrandCopy.text}}',
+    PrimaOrologi = '{{PrimaOrologiCopy.text}}',
+    PrimaOrdineVetrine = '{{PrimaOrdineVetrineCopy.text}}',
+    PrimaEspositori = '{{PrimaEspositoriCopy.text}}',
+    PrimaPulizia = '{{PrimaPuliziaCopy.text}}',
+    PrimaOrdineRetro = '{{PrimaOrdineRetroCopy.text}}',
     
-    DopoGioielleria = '{{DopoGioielleria.text}}',
-    DopoOreficeria = '{{DopoOreficeria.text}}',
-    DopoArgento = '{{DopoArgento.text}}',
-    DopoBrand = '{{DopoBrand.text}}',
-    DopoOrologi = '{{DopoOrologi.text}}',
-    DopoEspositori = '{{DopoEspositori.text}}',
+    DopoGioielleria = '{{DopoGioielleriaCopy.text}}',
+    DopoOreficeria = '{{DopoOreficeriaCopy.text}}',
+    DopoArgento = '{{DopoArgentoCopy.text}}',
+    DopoBrand = '{{DopoBrandCopy.text}}',
+    DopoOrologi = '{{DopoOrologiCopy.text}}',
+    DopoEspositori = '{{DopoEspositoriCopy.text}}',
     
-    SegnalazioniAlTeam = '{{SegnalazioniAlTeam.text}}',
-    OsservazioniAlTeam = '{{OsservazioniAlTeam.text}}',
+    SegnalazioniAlTeam = '{{SegnalazioniAlTeamCopy.text}}',
+    OsservazioniAlTeam = '{{OsservazioniAlTeamCopy.text}}'
 WHERE Negozio = {{SelectNegozio.selectedOptionValue}}
-AND DataPassaggio = {{moment(DatePassaggio.selectedDate).format("YYYY-MM-DD")}};
+AND DataPassaggio = '{{moment(DatePassaggio.selectedDate).format("YYYY-MM-DD")}}';

@@ -75,7 +75,7 @@
   "mobileRightColumn": 39,
   "mobileTopRow": 47,
   "needsErrorInfo": false,
-  "onClose": "{{closeModal(ModalInsert.name);}}",
+  "onClose": "",
   "parentColumnSpace": 16.6875,
   "parentId": "0",
   "parentRowSpace": 10,

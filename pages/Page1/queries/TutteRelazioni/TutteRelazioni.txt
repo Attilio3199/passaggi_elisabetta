@@ -1,2 +1,3 @@
 SELECT DataPassaggio, Negozio 
 FROM passaggi_elisabetta
+order by DataPassaggio DESC

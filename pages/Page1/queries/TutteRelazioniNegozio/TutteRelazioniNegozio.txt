@@ -1,2 +1,4 @@
-SELECT Negozio,DataPassaggio FROM passaggi_elisabetta
-Where Negozio = {{SelectNegozio.selectedOptionValue}}
+SELECT Negozio, DataPassaggio 
+FROM passaggi_elisabetta
+WHERE Negozio = '{{SelectNegozio.selectedOptionValue}}'
+ORDER BY DataPassaggio DESC;

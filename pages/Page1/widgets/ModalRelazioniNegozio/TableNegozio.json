@@ -207,7 +207,7 @@
       "label": "Mostra Relazione",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{Select1suTutte.run();\ncloseModal(ModalTutteLeRelazioni.name);\nshowModal(ModalUpdateCopy.name);}}",
+      "onClick": "{{Select1Negozio.run()\ncloseModal(ModalTutteLeRelazioni.name);\nshowModal(ModalUpdateCopy.name);}}",
       "originalId": "customColumn1",
       "sticky": "",
       "textSize": "0.875rem",

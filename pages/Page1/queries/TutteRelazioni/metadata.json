@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT DataPassaggio, Negozio \nFROM passaggi_elisabetta",
+      "body": "SELECT DataPassaggio, Negozio \nFROM passaggi_elisabetta\norder by DataPassaggio DESC",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

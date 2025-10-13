@@ -57,11 +57,7 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClose"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClose"
@@ -79,7 +75,7 @@
   "mobileRightColumn": 39,
   "mobileTopRow": 47,
   "needsErrorInfo": false,
-  "onClose": "{{closeModal(ModalInsert.name);\nshowModal(ModalUscita.name);}}",
+  "onClose": "",
   "parentColumnSpace": 16.6875,
   "parentId": "0",
   "parentRowSpace": 10,

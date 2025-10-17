@@ -23,6 +23,6 @@ INSERT INTO passaggi_elisabetta SET
     DopoEspositori = '{{DopoEspositori.text}}',
     
     SegnalazioniAlTeam = '{{SegnalazioniAlTeam.text}}',
-    OsservazioniAlTeam = '{{OsservazioniAlTeam.text}}';
+    OsservazioniAlTeam = '{{OsservazioniAlTeam.text}}'
 
-		UtenteModifica = '{{appsmith.user.name}}'
+		UtenteModifica = '{{appsmith.user.name}}';

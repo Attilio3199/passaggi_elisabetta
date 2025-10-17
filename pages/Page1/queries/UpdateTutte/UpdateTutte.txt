@@ -24,5 +24,6 @@ UPDATE passaggi_elisabetta SET
     
     SegnalazioniAlTeam = '{{SegnalazioniAlTeamCopyCopy.text}}',
     OsservazioniAlTeam = '{{OsservazioniAlTeamCopyCopy.text}}'
+		UtenteModifica = '{{appsmith.user.name}}'
 WHERE Negozio = '{{TableTutte.triggeredRow.Negozio}}'
 AND DataPassaggio = '{{moment(TableTutte.triggeredRow.DataPassaggio).format("YYYY-MM-DD")}}';

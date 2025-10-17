@@ -24,3 +24,5 @@ INSERT INTO passaggi_elisabetta SET
     
     SegnalazioniAlTeam = '{{SegnalazioniAlTeam.text}}',
     OsservazioniAlTeam = '{{OsservazioniAlTeam.text}}';
+
+		UtenteModifica = '{{appsmith.user.name}}'

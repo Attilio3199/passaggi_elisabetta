@@ -1,4 +1,4 @@
-SELECT Negozio, DataPassaggio 
+SELECT Negozio, DataPassaggio, UtenteModifica
 FROM passaggi_elisabetta
 WHERE Negozio = '{{SelectNegozio.selectedOptionValue}}'
 ORDER BY DataPassaggio DESC;

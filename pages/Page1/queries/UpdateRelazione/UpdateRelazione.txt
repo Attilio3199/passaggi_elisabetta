@@ -1,29 +1,23 @@
-UPDATE passaggi_elisabetta SET
-    IdPassaggiElisabetta = '{{SelectNegozio.selectedOptionValue + "_" + moment().format("YYYYMMDD_HHmmss")}}',
-
-		DataPassaggio = {{moment(DatePassaggio.selectedDate).format("YYYY-MM-DD")}},
-    Negozio = '{{SelectNegozio.selectedOptionValue}}',
-    PersoneInNegozio = '{{PersoneInNegozioCopy.text}}',
-    
-    PrimaGioielleria = '{{PrimaGioielleriaCopy.text}}',
-    PrimaOreficeria = '{{PrimaOreficeriaCopy.text}}',
-    PrimaArgento = '{{PrimaArgentoCopy.text}}',
-    PrimaBrand = '{{PrimaBrandCopy.text}}',
-    PrimaOrologi = '{{PrimaOrologiCopy.text}}',
-    PrimaOrdineVetrine = '{{PrimaOrdineVetrineCopy.text}}',
-    PrimaEspositori = '{{PrimaEspositoriCopy.text}}',
-    PrimaPulizia = '{{PrimaPuliziaCopy.text}}',
-    PrimaOrdineRetro = '{{PrimaOrdineRetroCopy.text}}',
-    
-    DopoGioielleria = '{{DopoGioielleriaCopy.text}}',
-    DopoOreficeria = '{{DopoOreficeriaCopy.text}}',
-    DopoArgento = '{{DopoArgentoCopy.text}}',
-    DopoBrand = '{{DopoBrandCopy.text}}',
-    DopoOrologi = '{{DopoOrologiCopy.text}}',
-    DopoEspositori = '{{DopoEspositoriCopy.text}}',
-    
-    SegnalazioniAlTeam = '{{SegnalazioniAlTeamCopy.text}}',
-    OsservazioniAlTeam = '{{OsservazioniAlTeamCopy.text}}',
-		UtenteModifica = '{{appsmith.user.name}}'
-WHERE Negozio = {{SelectNegozio.selectedOptionValue}}
-AND DataPassaggio = '{{moment(DatePassaggio.selectedDate).format("YYYY-MM-DD")}}';
+UPDATE passaggi_elisabetta
+SET
+  PersoneInNegozio = '{{PersoneInNegozioCopy.text}}',  
+  PrimaGioielleria = '{{PrimaGioielleriaCopy.text}}',
+  PrimaOreficeria = '{{PrimaOreficeriaCopy.text}}',
+  PrimaArgento = '{{PrimaArgentoCopy.text}}',
+  PrimaBrand = '{{PrimaBrandCopy.text}}',
+  PrimaOrologi = '{{PrimaOrologiCopy.text}}',
+  PrimaOrdineVetrine = '{{PrimaOrdineVetrineCopy.text}}',
+  PrimaEspositori = '{{PrimaEspositoriCopy.text}}',
+  PrimaPulizia = '{{PrimaPuliziaCopy.text}}',
+  PrimaOrdineRetro = '{{PrimaOrdineRetroCopy.text}}',
+  DopoGioielleria = '{{DopoGioielleriaCopy.text}}',
+  DopoOreficeria = '{{DopoOreficeriaCopy.text}}',
+  DopoArgento = '{{DopoArgentoCopy.text}}',
+  DopoBrand = '{{DopoBrandCopy.text}}',
+  DopoOrologi = '{{DopoOrologiCopy.text}}',
+  DopoEspositori = '{{DopoEspositoriCopy.text}}',   
+  SegnalazioniAlTeam = '{{SegnalazioniAlTeamCopy.text}}',
+  OsservazioniAlTeam = '{{OsservazioniAlTeamCopy.text}}'
+WHERE Negozio = '{{SelectNegozio.selectedOptionValue}}'
+  AND DataPassaggio = '{{moment(DatePassaggio.selectedDate).format("YYYY-MM-DD")}}'
+  AND UtenteModifica = '{{appsmith.user.name}}';

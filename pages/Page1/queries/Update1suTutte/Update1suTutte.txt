@@ -1,0 +1,21 @@
+UPDATE passaggi_elisabetta
+SET
+  PersoneInNegozio = '{{PersoneInNegozioCopyCopy.text}}',  
+  PrimaGioielleria = '{{PrimaGioielleriaCopyCopy.text}}',
+  PrimaOreficeria = '{{PrimaOreficeriaCopyCopy.text}}',
+  PrimaArgento = '{{PrimaArgentoCopyCopy.text}}',
+  PrimaBrand = '{{PrimaBrandCopyCopy.text}}',
+  PrimaOrologi = '{{PrimaOrologiCopyCopy.text}}',
+  PrimaOrdineVetrine = '{{PrimaOrdineVetrineCopyCopy.text}}',
+  PrimaEspositori = '{{PrimaEspositoriCopyCopy.text}}',
+  PrimaPulizia = '{{PrimaPuliziaCopyCopy.text}}',
+  PrimaOrdineRetro = '{{PrimaOrdineRetroCopyCopy.text}}',
+  DopoGioielleria = '{{DopoGioielleriaCopyCopy.text}}',
+  DopoOreficeria = '{{DopoOreficeriaCopyCopy.text}}',
+  DopoArgento = '{{DopoArgentoCopyCopy.text}}',
+  DopoBrand = '{{DopoBrandCopyCopy.text}}',
+  DopoOrologi = '{{DopoOrologiCopyCopy.text}}',
+  DopoEspositori = '{{DopoEspositoriCopyCopy.text}}',   
+  SegnalazioniAlTeam = '{{SegnalazioniAlTeamCopyCopy.text}}',
+  OsservazioniAlTeam = '{{OsservazioniAlTeamCopyCopy.text}}'
+WHERE IdPassaggiElisabetta = '{{TableTutte.triggeredRow.IdPassaggiElisabetta}}'

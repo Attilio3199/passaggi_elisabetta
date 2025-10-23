@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 24,
   "boxShadow": "none",
-  "defaultText": "{{SelectRelazione.data[0].OsservazioniAlTeam}}",
+  "defaultText": "{{UpdOrIns.data[0].OsservazioniAlTeam}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

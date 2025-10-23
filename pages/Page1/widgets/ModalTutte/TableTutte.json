@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 46,
+  "bottomRow": 38,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -34,15 +34,13 @@
   "columnOrder": [
     "DataPassaggio",
     "Negozio",
-    "customColumn1",
+    "IdPassaggiElisabetta",
     "UtenteModifica",
-    "IdPassaggiElisabetta"
+    "customColumn1"
   ],
-  "columnUpdatedAt": 1761225519816,
+  "columnUpdatedAt": 1761229898339,
   "columnWidthMap": {
-    "DataPassaggio": 151,
-    "Negozio": 93,
-    "customColumn1": 60
+    "UtenteModifica": 241
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -72,6 +70,12 @@
       "key": "primaryColumns.Negozio.computedValue"
     },
     {
+      "key": "primaryColumns.IdPassaggiElisabetta.computedValue"
+    },
+    {
+      "key": "primaryColumns.UtenteModifica.computedValue"
+    },
+    {
       "key": "primaryColumns.customColumn1.buttonColor"
     },
     {
@@ -79,12 +83,6 @@
     },
     {
       "key": "primaryColumns.customColumn1.boxShadow"
-    },
-    {
-      "key": "primaryColumns.UtenteModifica.computedValue"
-    },
-    {
-      "key": "primaryColumns.IdPassaggiElisabetta.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -109,17 +107,17 @@
   "isVisibleFilters": false,
   "isVisiblePagination": false,
   "isVisibleSearch": true,
-  "key": "fgln969l17",
+  "key": "ngnbzzsrqe",
   "label": "Data",
-  "leftColumn": 4,
+  "leftColumn": 1,
   "minWidth": 450,
-  "mobileBottomRow": 35,
-  "mobileLeftColumn": 1,
-  "mobileRightColumn": 35,
-  "mobileTopRow": 7,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 10,
+  "mobileRightColumn": 44,
+  "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "parentColumnSpace": 13.90625,
-  "parentId": "duvxnqr4h0",
+  "parentColumnSpace": 9.6875,
+  "parentId": "zdi8b10zpo",
   "parentRowSpace": 10,
   "primaryColumns": {
     "DataPassaggio": {
@@ -158,17 +156,15 @@
       "alias": "IdPassaggiElisabetta",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = TableTutte.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"IdPassaggiElisabetta\"])) : IdPassaggiElisabetta })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "IdPassaggiElisabetta",
-      "index": 3,
+      "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -181,7 +177,6 @@
       "notation": "standard",
       "originalId": "IdPassaggiElisabetta",
       "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -223,17 +218,15 @@
       "alias": "UtenteModifica",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = TableTutte.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"UtenteModifica\"])) : UtenteModifica })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "UtenteModifica",
-      "index": 2,
+      "index": 3,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -242,11 +235,10 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Chi ha compilato la relazione",
+      "label": "Chi ha compilato",
       "notation": "standard",
       "originalId": "UtenteModifica",
       "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -254,7 +246,7 @@
       "width": 150
     },
     "customColumn1": {
-      "alias": "Mostra Relazione",
+      "alias": "Apri Relazione",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{TableTutte.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
@@ -271,7 +263,7 @@
       "horizontalAlignment": "LEFT",
       "iconName": "annotation",
       "id": "customColumn1",
-      "index": 2,
+      "index": 4,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": true,
@@ -280,10 +272,10 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Mostra Relazione",
+      "label": "Apri Relazione",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{Select1suTutte.run().then(() => {\n  closeModal(ModalTutteLeRelazioni.name);\n  showModal(ModalUpdateCopy.name);\n});}}",
+      "onClick": "{{Select1suTutte.run().then(() => {\n  closeModal(ModalTutte.name);\n  showModal(ModalUpdateCopy.name);\n});}}",
       "originalId": "customColumn1",
       "sticky": "",
       "textSize": "0.875rem",
@@ -295,16 +287,16 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 60,
+  "rightColumn": 63,
   "searchKey": "",
-  "serverSidePaginationEnabled": true,
-  "tableData": "{{TutteRelazioni.data}}",
+  "serverSidePaginationEnabled": false,
+  "tableData": "{{SelectTutte.data}}",
   "textSize": "0.875rem",
-  "topRow": 8,
+  "topRow": 4,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "xjfust0omn",
+  "widgetId": "t1c6hve3p5",
   "widgetName": "TableTutte"
 }

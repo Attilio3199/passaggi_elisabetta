@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "688ce4449151b45b1395dcb4_88297b10-27a0-4214-afb5-d5051a72ce0a",
-  "id": "Page1_SelectNegozi",
+  "gitSyncId": "68ecdcae3733a6403dd28441_e7e99189-a8f2-428d-9e3f-03dbb33dad13",
+  "id": "Page1_SelectTutte",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT Neg FROM listanegozi\nwhere Neg <> \"SEDE\"\nand Neg <> \"SMART WORKING\"\nOrder by Neg ASC;",
+      "body": "SELECT DataPassaggio, Negozio, IdPassaggiElisabetta, UtenteModifica\nFROM passaggi_elisabetta\nOrder by DataPassaggio DESC",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,7 +23,7 @@
       "pluginId": "mysql-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "SelectNegozi",
+    "name": "SelectTutte",
     "pageId": "Page1",
     "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false

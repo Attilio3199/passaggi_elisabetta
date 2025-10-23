@@ -1,0 +1,3 @@
+SELECT DataPassaggio, Negozio, IdPassaggiElisabetta, UtenteModifica
+FROM passaggi_elisabetta
+Order by DataPassaggio DESC

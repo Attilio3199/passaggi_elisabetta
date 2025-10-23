@@ -1,0 +1,4 @@
+SELECT * FROM passaggi_elisabetta
+where Negozio = '{{SelectNegozio.selectedOptionValue}}'
+and DataPassaggio = '{{moment(DatePassaggio.selectedDate).format("YYYY-MM-DD")}}'
+AND UtenteModifica = '{{appsmith.user.name}}'

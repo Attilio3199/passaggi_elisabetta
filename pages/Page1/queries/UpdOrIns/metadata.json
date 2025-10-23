@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "688ce4449151b45b1395dcb4_96e17252-d972-4005-9a32-816589c35fe0",
-  "id": "Page1_SelectRelazione",
+  "gitSyncId": "68ecdcae3733a6403dd28441_e38810fa-b2f7-4a15-95af-b33de82b387b",
+  "id": "Page1_UpdOrIns",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM passaggi_elisabetta\nWHERE Negozio = {{SelectNegozio.selectedOptionValue}}\nAND DataPassaggio = {{moment(DatePassaggio.selectedDate).format(\"YYYY-MM-DD\")}}",
+      "body": "SELECT * FROM passaggi_elisabetta\nwhere Negozio = '{{SelectNegozio.selectedOptionValue}}'\nand DataPassaggio = '{{moment(DatePassaggio.selectedDate).format(\"YYYY-MM-DD\")}}'\nAND UtenteModifica = '{{appsmith.user.name}}'\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "name": "SelectRelazione",
+    "name": "UpdOrIns",
     "pageId": "Page1",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": true
+    "runBehaviour": "AUTOMATIC",
+    "userSetOnLoad": false
   }
 }

@@ -1,6 +1,6 @@
 INSERT INTO passaggi_elisabetta SET
     IdPassaggiElisabetta = '{{SelectNegozio.selectedOptionValue + "_" + moment().format("YYYYMMDD_HHmmss")}}',
-		DataPassaggio = {{moment(DatePassaggio.selectedDate).format("YYYY-MM-DD")}},
+		DataPassaggio = '{{moment(DatePassaggio.selectedDate).format("YYYY-MM-DD")}}',
     Negozio = '{{SelectNegozio.selectedOptionValue}}',
     PersoneInNegozio = '{{PersoneInNegozio.text}}',  
     PrimaGioielleria = '{{PrimaGioielleria.text}}',

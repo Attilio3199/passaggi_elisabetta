@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 74,
   "boxShadow": "none",
-  "defaultText": "{{SelectRelazione.data[0].DopoArgento}}",
+  "defaultText": "{{UpdOrIns.data[0].DopoArgento}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

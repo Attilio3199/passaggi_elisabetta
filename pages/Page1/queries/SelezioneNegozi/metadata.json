@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "68ecdcae3733a6403dd28441_c3904b6a-8ce1-4cdd-8859-94e92bf52418",
-  "id": "Page1_TutteRelazioni",
+  "gitSyncId": "68ecdcae3733a6403dd28441_920d89ee-37ed-486a-b60c-a41c86cf1892",
+  "id": "Page1_SelezioneNegozi",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT DataPassaggio, Negozio, UtenteModifica, IdPassaggiElisabetta\nFROM passaggi_elisabetta\norder by DataPassaggio DESC",
+      "body": "SELECT NEG\nFROM listanegozi\nWHERE NEG NOT IN ('SEDE', 'SMART WORKING')\nGROUP BY NEG\nORDER BY NEG;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -23,9 +23,9 @@
       "pluginId": "mysql-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "TutteRelazioni",
+    "name": "SelezioneNegozi",
     "pageId": "Page1",
-    "runBehaviour": "AUTOMATIC",
-    "userSetOnLoad": false
+    "runBehaviour": "ON_PAGE_LOAD",
+    "userSetOnLoad": true
   }
 }

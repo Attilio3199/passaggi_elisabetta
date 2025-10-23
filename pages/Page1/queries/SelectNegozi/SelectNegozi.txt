@@ -1,4 +1,0 @@
-SELECT Neg FROM listanegozi
-where Neg <> "SEDE"
-and Neg <> "SMART WORKING"
-Order by Neg ASC;

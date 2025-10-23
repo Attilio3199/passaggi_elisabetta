@@ -1,3 +1,0 @@
-SELECT DataPassaggio, Negozio, UtenteModifica, IdPassaggiElisabetta
-FROM passaggi_elisabetta
-order by DataPassaggio DESC

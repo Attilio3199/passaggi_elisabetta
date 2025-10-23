@@ -31,7 +31,7 @@
   "mobileRightColumn": 16,
   "mobileTopRow": 24,
   "needsErrorInfo": false,
-  "onClick": "{{TutteRelazioni.run();\nshowModal(ModalTutteLeRelazioni.name);}}",
+  "onClick": "{{SelectTutte.run().then(() => {\n  showModal(ModalTutte.name);\n});}}",
   "parentColumnSpace": 16.1142578125,
   "parentId": "jojhclu2cw",
   "parentRowSpace": 10,

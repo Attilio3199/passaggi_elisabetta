@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "688ce4449151b45b1395dcb4_92ed81e4-3046-45f8-a690-92b56dbf23e7",
+  "gitSyncId": "68ecdcae3733a6403dd28441_d80f5a2f-1aae-4973-afaf-33836732c8b4",
   "id": "Page1_UpdateRelazione",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE passaggi_elisabetta SET\n    IdPassaggiElisabetta = '{{SelectNegozio.selectedOptionValue + \"_\" + moment().format(\"YYYYMMDD_HHmmss\")}}',\n\n\t\tDataPassaggio = {{moment(DatePassaggio.selectedDate).format(\"YYYY-MM-DD\")}},\n    Negozio = '{{SelectNegozio.selectedOptionValue}}',\n    PersoneInNegozio = '{{PersoneInNegozioCopy.text}}',\n    \n    PrimaGioielleria = '{{PrimaGioielleriaCopy.text}}',\n    PrimaOreficeria = '{{PrimaOreficeriaCopy.text}}',\n    PrimaArgento = '{{PrimaArgentoCopy.text}}',\n    PrimaBrand = '{{PrimaBrandCopy.text}}',\n    PrimaOrologi = '{{PrimaOrologiCopy.text}}',\n    PrimaOrdineVetrine = '{{PrimaOrdineVetrineCopy.text}}',\n    PrimaEspositori = '{{PrimaEspositoriCopy.text}}',\n    PrimaPulizia = '{{PrimaPuliziaCopy.text}}',\n    PrimaOrdineRetro = '{{PrimaOrdineRetroCopy.text}}',\n    \n    DopoGioielleria = '{{DopoGioielleriaCopy.text}}',\n    DopoOreficeria = '{{DopoOreficeriaCopy.text}}',\n    DopoArgento = '{{DopoArgentoCopy.text}}',\n    DopoBrand = '{{DopoBrandCopy.text}}',\n    DopoOrologi = '{{DopoOrologiCopy.text}}',\n    DopoEspositori = '{{DopoEspositoriCopy.text}}',\n    \n    SegnalazioniAlTeam = '{{SegnalazioniAlTeamCopy.text}}',\n    OsservazioniAlTeam = '{{OsservazioniAlTeamCopy.text}}',\n\t\tUtenteModifica = '{{appsmith.user.name}}'\nWHERE Negozio = {{SelectNegozio.selectedOptionValue}}\nAND DataPassaggio = '{{moment(DatePassaggio.selectedDate).format(\"YYYY-MM-DD\")}}';",
+      "body": "UPDATE passaggi_elisabetta\nSET\n  PersoneInNegozio = '{{PersoneInNegozioCopy.text}}',  \n  PrimaGioielleria = '{{PrimaGioielleriaCopy.text}}',\n  PrimaOreficeria = '{{PrimaOreficeriaCopy.text}}',\n  PrimaArgento = '{{PrimaArgentoCopy.text}}',\n  PrimaBrand = '{{PrimaBrandCopy.text}}',\n  PrimaOrologi = '{{PrimaOrologiCopy.text}}',\n  PrimaOrdineVetrine = '{{PrimaOrdineVetrineCopy.text}}',\n  PrimaEspositori = '{{PrimaEspositoriCopy.text}}',\n  PrimaPulizia = '{{PrimaPuliziaCopy.text}}',\n  PrimaOrdineRetro = '{{PrimaOrdineRetroCopy.text}}',\n  DopoGioielleria = '{{DopoGioielleriaCopy.text}}',\n  DopoOreficeria = '{{DopoOreficeriaCopy.text}}',\n  DopoArgento = '{{DopoArgentoCopy.text}}',\n  DopoBrand = '{{DopoBrandCopy.text}}',\n  DopoOrologi = '{{DopoOrologiCopy.text}}',\n  DopoEspositori = '{{DopoEspositoriCopy.text}}',   \n  SegnalazioniAlTeam = '{{SegnalazioniAlTeamCopy.text}}',\n  OsservazioniAlTeam = '{{OsservazioniAlTeamCopy.text}}'\nWHERE Negozio = '{{SelectNegozio.selectedOptionValue}}'\n  AND DataPassaggio = '{{moment(DatePassaggio.selectedDate).format(\"YYYY-MM-DD\")}}'\n  AND UtenteModifica = '{{appsmith.user.name}}';\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000

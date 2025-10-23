@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 96,
   "boxShadow": "none",
-  "defaultText": "{{SelectRelazione.data[0].PrimaBrand}}",
+  "defaultText": "{{UpdOrIns.data[0].PrimaBrand}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

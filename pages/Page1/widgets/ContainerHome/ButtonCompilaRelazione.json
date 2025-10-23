@@ -48,7 +48,7 @@
   "mobileRightColumn": 18,
   "mobileTopRow": 26,
   "needsErrorInfo": false,
-  "onClick": "ResetWidget.resetWidgets();\nSelectRelazione.run(() => {\n  if (SelectRelazione.data && SelectRelazione.data.length > 0) {\n    showModal(ModalUpdate.name);\n  } else {\n    showModal(ModalInsert.name);\n  }\n});\n",
+  "onClick": "ResetWidget.resetWidgets();\nUpdOrIns.run(() => {\n  if (UpdOrIns.data && UpdOrIns.data.length > 0) {\n    showModal(ModalUpdate.name);\n  } else {\n    showModal(ModalInsert.name);\n  }\n});\n",
   "parentColumnSpace": 16.1142578125,
   "parentId": "jojhclu2cw",
   "parentRowSpace": 10,

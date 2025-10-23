@@ -39,7 +39,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 445,
   "needsErrorInfo": false,
-  "onClick": "{{InsertRelazione.run().then(() => {\n  showAlert('Relazione salvata con successo', 'success');\n});\ncloseModal(ModalInsert.name);\ncloseModal(ModalUscita.name);}}",
+  "onClick": "{{InsertRelazione.run().then(() => {\n  showAlert('Relazione salvata con successo', 'success');\n  closeModal('ModalInsert');\n}).catch(() => {\n  showAlert('Errore nel salvataggio', 'error');\n});}}",
   "originalBottomRow": 449,
   "originalTopRow": 445,
   "parentColumnSpace": 11.91796875,

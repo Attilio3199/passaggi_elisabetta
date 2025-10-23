@@ -35,9 +35,10 @@
     "DataPassaggio",
     "Negozio",
     "customColumn1",
-    "UtenteModifica"
+    "UtenteModifica",
+    "IdPassaggiElisabetta"
   ],
-  "columnUpdatedAt": 1760692666115,
+  "columnUpdatedAt": 1761225519816,
   "columnWidthMap": {
     "DataPassaggio": 151,
     "Negozio": 93,
@@ -81,6 +82,9 @@
     },
     {
       "key": "primaryColumns.UtenteModifica.computedValue"
+    },
+    {
+      "key": "primaryColumns.IdPassaggiElisabetta.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -150,6 +154,40 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "IdPassaggiElisabetta": {
+      "alias": "IdPassaggiElisabetta",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableTutte.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"IdPassaggiElisabetta\"])) : IdPassaggiElisabetta })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "IdPassaggiElisabetta",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "IdPassaggiElisabetta",
+      "notation": "standard",
+      "originalId": "IdPassaggiElisabetta",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "Negozio": {
       "alias": "Negozio",
       "allowCellWrapping": false,
@@ -204,7 +242,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "UtenteModifica",
+      "label": "Chi ha compilato la relazione",
       "notation": "standard",
       "originalId": "UtenteModifica",
       "sticky": "",
@@ -245,7 +283,7 @@
       "label": "Mostra Relazione",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{Select1suTutte.run();\ncloseModal(ModalTutteLeRelazioni.name);\nshowModal(ModalUpdateCopy.name);}}",
+      "onClick": "{{Select1suTutte.run().then(() => {\n  closeModal(ModalTutteLeRelazioni.name);\n  showModal(ModalUpdateCopy.name);\n});}}",
       "originalId": "customColumn1",
       "sticky": "",
       "textSize": "0.875rem",

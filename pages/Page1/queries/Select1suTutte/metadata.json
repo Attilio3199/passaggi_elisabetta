@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "68ecdcae3733a6403dd28441_396504cd-6b87-465a-b984-b38a0dfb3780",
+  "gitSyncId": "68ecdcae3733a6403dd28441_d11c6440-d62d-47b5-8ec1-09d66fc4845d",
   "id": "Page1_Select1suTutte",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM passaggi_elisabetta\nWHERE Negozio = {{TableTutte.triggeredRow.Negozio}}\nAND DataPassaggio = {{TableTutte.triggeredRow.DataPassaggio}}",
+      "body": "SELECT * FROM passaggi_elisabetta\nWhere IdPassaggiElisabetta = {{TableTutte.triggeredRow.IdPassaggiElisabetta}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

@@ -39,7 +39,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 445,
   "needsErrorInfo": false,
-  "onClick": "{{UpdateNegozio.run().then(() => {\n  showAlert('Relazione modificata con successo', 'success');\n}).catch(() => {\n  showAlert('Errore nel salvataggio', 'warning');\n});\ncloseModal(ModalUpdateCopy.name);\ncloseModal(ModalUscita.name);}}",
+  "onClick": "{{UpdateTutte.run().then(() => {\n  showAlert('Relazione modificata con successo', '');\n  closeModal(ModalUpdateCopy.name);\n}).catch(() => {\n  showAlert('Errore nella modifica', 'error');\n});}}",
   "originalBottomRow": 449,
   "originalTopRow": 445,
   "parentColumnSpace": 11.91796875,

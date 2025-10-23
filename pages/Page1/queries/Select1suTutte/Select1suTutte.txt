@@ -1,3 +1,2 @@
 SELECT * FROM passaggi_elisabetta
-WHERE Negozio = {{TableTutte.triggeredRow.Negozio}}
-AND DataPassaggio = {{TableTutte.triggeredRow.DataPassaggio}}
+Where IdPassaggiElisabetta = {{TableTutte.triggeredRow.IdPassaggiElisabetta}}
